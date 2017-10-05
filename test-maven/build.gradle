@@ -28,6 +28,7 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:26.+'
     testCompile 'junit:junit:4.12'
+    compile 'com.adjust.sdk:adjust-android:4.7.0'
 }
 
 android.libraryVariants.all { variant ->
@@ -67,3 +68,32 @@ task createJar(type: Copy) {
     rename('classes.jar', 'maven-test.jar')
 }
 
+ext {
+
+    //For bintray and jcenter distribution
+    bintrayRepo = 'com.marcelosantos'
+    bintrayName = 'test-maven'
+
+    publishedGroupId = 'com.marcelosantos'
+    libraryName = 'TestMaven'
+    artifact = 'test-maven' //This artifact name should be the same with library module name
+
+    libraryDescription = 'Simple, clean and short description'
+
+    siteUrl = 'https://github.com/marcelosantosti/test-maven'
+    gitUrl = 'https://github.com/marcelosantosti/test-maven.git'
+
+    libraryVersion = '0.0.13'
+
+    developerId = '123456'
+    developerName = 'Marcelo'
+    developerEmail = 'marcelo.luis.santos'
+    licenseName = 'The Apache Software License, Version 2.0'  //Example for license
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    organization = ''
+    allLicenses = ["Apache-2.0"]
+
+}
+//These two remote files contain Bintray configuration as described above.
+apply from: 'install.gradle'
+apply from: 'bintraypublish.gradle'

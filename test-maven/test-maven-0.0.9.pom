@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.marcelosantos</groupId>
+  <artifactId>test-maven</artifactId>
+  <version>0.0.8</version>
+  <packaging>aar</packaging>
+  <name>TestMaven</name>
+  <description>Simple, clean and short description</description>
+  <url>https://github.com/marcelosantosti/test-maven</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>123456</id>
+      <name>Marcelo</name>
+      <email>marcelo.luis.santos</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>https://github.com/marcelosantosti/test-maven.git</connection>
+    <developerConnection>https://github.com/marcelosantosti/test-maven.git</developerConnection>
+    <url>https://github.com/marcelosantosti/test-maven</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>com.android.support</groupId>
+      <artifactId>appcompat-v7</artifactId>
+      <version>26.+</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>
