@@ -57,13 +57,28 @@ bintray {
         licenses = allLicenses
         publish = true
         publicDownloadNumbers = true
-        version {
-            desc = libraryDescription
-            gpg {
-                sign = true
-                passphrase = properties.getProperty("bintray.gpg.password")
-            }
+    }
+}
+
+// Create the pom configuration:
+def pomConfig = {
+    licenses {
+        license {
+            name "The Apache Software License, Version 2.0"
+            url "http://www.apache.org/licenses/LICENSE-2.0.txt"
+            distribution "repo"
         }
+    }
+    developers {
+        developer {
+            id '123456'
+            name 'Marcelo Santos'
+            email 'marcelo.luis.santos@outlook.com'
+        }
+    }
+
+    scm {
+        url "https://github.com/marcelosantosti/test-maven"
     }
 }
 
@@ -71,9 +86,18 @@ publishing {
     publications {
         Publication(MavenPublication) {
             artifact 'build/intermediates/bundles/default/classes.jar'
+            artifact sourcesJar
+            artifact javadocJar
             groupId groupId
             artifactId artifactId
             version libraryVersion
+            pom.withXml {
+                def root = asNode()
+                root.appendNode('description', 'Your description of the lib')
+                root.appendNode('name', 'Your name of the lib')
+                root.appendNode('url', 'https://site_for_lib.tld')
+                root.children().last() + pomConfig
+            }
         }
     }
 }

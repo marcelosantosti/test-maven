@@ -22,8 +22,9 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        mavenCentral()
         maven {
-            url 'http://dl.bintray.com/marcelo-luis-santos/com.marcelosantos'
+            url  'https://oss.jfrog.org/artifactory/oss-snapshot-local'
         }
     }
     //apply plugin: 'maven'

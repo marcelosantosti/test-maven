@@ -71,10 +71,10 @@ task createJar(type: Copy) {
 ext {
 
     //For bintray and jcenter distribution
-    bintrayRepo = 'com.marcelosantos'
+    bintrayRepo = 'io.github.marcelosantosti'
     bintrayName = 'test-maven'
 
-    publishedGroupId = 'com.marcelosantos'
+    publishedGroupId = 'io.github.marcelosantosti'
     libraryName = 'TestMaven'
     artifact = 'test-maven' //This artifact name should be the same with library module name
 
@@ -83,7 +83,7 @@ ext {
     siteUrl = 'https://github.com/marcelosantosti/test-maven'
     gitUrl = 'https://github.com/marcelosantosti/test-maven.git'
 
-    libraryVersion = '0.0.13'
+    libraryVersion = '0.0.20'
 
     developerId = '123456'
     developerName = 'Marcelo'
@@ -95,5 +95,5 @@ ext {
 
 }
 //These two remote files contain Bintray configuration as described above.
-apply from: 'install.gradle'
+//apply from: 'install.gradle'
 apply from: 'bintraypublish.gradle'
