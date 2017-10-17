@@ -29,5 +29,5 @@ dependencies {
     //compile project(':test-maven')
     //compile 'io.github.marcelosantosti:test-maven:0.0.17'
     //compile 'io.github.marcelosantosti:test-maven:0.0.20'
-    compile 'io.github.marcelosantosti:test-maven:0.0.22'
+    compile 'io.github.marcelosantosti:test-maven:0.0.23'
 }

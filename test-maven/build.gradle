@@ -84,7 +84,7 @@ ext {
     siteUrl = 'https://github.com/marcelosantosti/test-maven'
     gitUrl = 'https://github.com/marcelosantosti/test-maven.git'
 
-    libraryVersion = '0.0.22'
+    libraryVersion = '0.0.23'
 
     developerId = '123456'
     developerName = 'Marcelo'
@@ -93,6 +93,8 @@ ext {
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     organization = ''
     allLicenses = ["Apache-2.0"]
+
+    //https://oss.jfrog.org/artifactory/oss-snapshot-local/io.github.marcelosantosti/test-maven/0.0.22/test-maven-0.0.22.pom
 
 }
 //These two remote files contain Bintray configuration as described above.

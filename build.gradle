@@ -23,9 +23,9 @@ allprojects {
     repositories {
         jcenter()
         mavenCentral()
-        maven {
+        /*maven {
             url  'https://oss.jfrog.org/artifactory/oss-snapshot-local'
-        }
+        }*/
     }
     //apply plugin: 'maven'
     apply plugin: 'maven-publish'
