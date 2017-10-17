@@ -86,9 +86,9 @@ publishing {
     publications {
         Publication(MavenPublication) {
             artifact 'build/intermediates/bundles/default/classes.jar'
-            artifact sourcesJar
-            artifact javadocJar
-            groupId groupId
+            //artifact sourcesJar
+            //artifact javadocJar
+            groupId publishedGroupId
             artifactId artifactId
             version libraryVersion
             pom.withXml {

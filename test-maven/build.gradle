@@ -75,7 +75,8 @@ ext {
     bintrayName = 'test-maven'
 
     publishedGroupId = 'io.github.marcelosantosti'
-    libraryName = 'TestMaven'
+    //libraryName = 'TestMaven'
+    libraryName = 'test-maven'
     artifact = 'test-maven' //This artifact name should be the same with library module name
 
     libraryDescription = 'Simple, clean and short description'
@@ -83,7 +84,7 @@ ext {
     siteUrl = 'https://github.com/marcelosantosti/test-maven'
     gitUrl = 'https://github.com/marcelosantosti/test-maven.git'
 
-    libraryVersion = '0.0.20'
+    libraryVersion = '0.0.22'
 
     developerId = '123456'
     developerName = 'Marcelo'
